@@ -10,7 +10,7 @@
 # See /LICENSE for more information.
 #
 
-# Uncomment a feed source
+# 取消注释 helloworld 的 feed 源
 # sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
