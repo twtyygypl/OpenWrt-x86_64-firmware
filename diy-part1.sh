@@ -23,14 +23,14 @@ sed -i 's/CONFIG_IPV6=n/CONFIG_IPV6=y/' .config
 
 # 设置自定义内核版本
 # 假设你要切换到某个特定的内核版本，可以通过如下命令设置
-# sed -i 's/CONFIG_KERNEL_VERSION=".*"/CONFIG_KERNEL_VERSION="5.15"/' .config
+sed -i 's/CONFIG_KERNEL_VERSION=".*"/CONFIG_KERNEL_VERSION="5.15"/' .config
 
 # 如果要更新内核源代码到某个特定的版本，可以在这里指定
 # 比如从 GitHub 拉取特定版本的内核代码
 # git clone https://github.com/yourkernelrepo.git package/kernel/yourkernel
 
 # 自定义版本号
-# sed -i 's/openwrt/23.05/' package/base-files/files/etc/openwrt_release
+sed -i 's/openwrt/23.05/' package/base-files/files/etc/openwrt_release
 
 # 添加自定义软件包
 # 假设你已经准备好了额外的软件包目录
