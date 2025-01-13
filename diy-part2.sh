@@ -23,5 +23,3 @@
 
 # 修改默认管理 IP
 sed -i 's/192.168.1.1/192.168.3.94/g' package/base-files/files/bin/config_generate
-
-
