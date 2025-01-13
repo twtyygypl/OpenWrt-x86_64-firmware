@@ -15,7 +15,7 @@ sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/M
 sed -i 's/CONFIG_LANG="en"/CONFIG_LANG="zh_CN"/' .config
 
 # 开启某些额外的功能（例如 IPv6）
-sed -i 's/CONFIG_IPV6=n/CONFIG_IPV6=y/' .config
+# sed -i 's/CONFIG_IPV6=n/CONFIG_IPV6=y/' .config
 
 # 选择默认的内核配置
 # sed -i 's/CONFIG_TARGET_x86_64=y/CONFIG_TARGET_x86_64=y/' .config
@@ -30,7 +30,7 @@ sed -i 's/CONFIG_IPV6=n/CONFIG_IPV6=y/' .config
 # git clone https://github.com/yourkernelrepo.git package/kernel/yourkernel
 
 # 自定义版本号
-# sed -i 's/openwrt/23.05/' package/base-files/files/etc/openwrt_release
+sed -i 's/openwrt/23.05/' package/base-files/files/etc/openwrt_release
 
 # 添加自定义软件包
 # 假设你已经准备好了额外的软件包目录
@@ -43,5 +43,5 @@ sed -i 's/CONFIG_IPV6=n/CONFIG_IPV6=y/' .config
 
 # Add a feed source
 # echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
-# echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 
